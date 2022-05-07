@@ -14,19 +14,19 @@ const SimpleLoadingIcon = ({
 }:SimpleLoadingIconProps) => (
   <svg
     className={'svg'}
-    viewBox="0 0 24 24"
+    viewBox='0 0 24 24'
     width={width}
     height={height}
   >
     <circle
       className={'path'}
-      cx="12"
-      cy="12"
-      r="8"
-      strokeLinecap="round"
+      cx='12'
+      cy='12'
+      r='8'
+      strokeLinecap='round'
       strokeWidth={thickness}
       stroke={color}
-      fill="none"
+      fill='none'
     />
   </svg>
 )

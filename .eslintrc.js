@@ -5,8 +5,8 @@ module.exports = {
     node: true
   },
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
+    'eslint:recommended',
+    'plugin:react/recommended',
     'plugin:jest/recommended'
   ],
   parser: '@typescript-eslint/parser',
@@ -23,6 +23,8 @@ module.exports = {
     'jest'
   ],
   rules: {
+    'jsx-quotes': [2, 'prefer-single'],
+    'quotes': [2, 'single', { 'avoidEscape': true }],
     indent: ['error', 2],
     'no-multi-spaces': ['error'],
     'jest/no-disabled-tests': 'warn',

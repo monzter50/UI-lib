@@ -85,7 +85,6 @@ export default function Button (props: BaseButtonProps) {
 
   const iconNode = loading ? <SimpleLoadingIcon height={20} width={20}/> : icon || null
 
-  console.log(classes)
   return (
     <button type={htmlType} className={classes} {...rest}>
       {iconNode}
