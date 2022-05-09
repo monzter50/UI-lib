@@ -14,7 +14,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://npm.pkg.github.com'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@monzter50'
       - name: 🤖 install
         run: npm install
       - name: ​🔧 checking
@@ -24,7 +26,7 @@ jobs:
       - name: ​✔️​​ publish
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
 
 
