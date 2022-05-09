@@ -75,6 +75,10 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monzter50/UI-lib.git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/monzter50",
     "access": "public"
