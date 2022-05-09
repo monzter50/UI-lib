@@ -16,14 +16,13 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - name: 🤖 install
-      - run: npm install
+        run: npm install
       - name: ​🔧 checking
-      - run: npm run lint
-      - run: npm run test
+        run: npm run lint && npm run test
       - name: ​🏗️​ prepare
-      - run: npm run rollup
+        run: npm run rollup
       - name: ​✔️​​ publish
-      - run: npm publish --access public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
