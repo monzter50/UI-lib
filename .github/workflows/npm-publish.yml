@@ -15,13 +15,15 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-          # Defaults to the user or organization that owns the workflow file
-          scope: '@monstercodes'
+      - name: 🤖 install
       - run: npm install
+      - name: ​🔧 checking
       - run: npm run lint
       - run: npm run test
+      - name: ​🏗️​ prepare
       - run: npm run rollup
-      - run: npm publish
+      - name: ​✔️​​ publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
