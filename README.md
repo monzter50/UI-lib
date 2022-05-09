@@ -1,4 +1,4 @@
-# template-react-component-library
+# ui lib
 
 We spend time using good community practices to make your project scalable. ❤️
 
